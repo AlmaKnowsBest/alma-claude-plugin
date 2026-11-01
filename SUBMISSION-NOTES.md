@@ -32,7 +32,7 @@ Status of the Alma plugin against the Claude plugin directory's pre-submission c
 | Component folders and files spelled exactly | Pass, `skills/<name>/SKILL.md` |
 | No top-level `bin/` | Pass |
 | README describes everything the plugin runs, sends or fetches | Pass, no code runs; data goes only to the user's Alma account through `mcp.alma.food` |
-| `claude plugin validate .` | Pass (Claude Code 2.1.312), one warning: no icon |
+| `claude plugin validate .` | Pass. Icon added at `.claude-plugin/icon.png` (iOS app icon, 512 px) |
 | Portal Validate and security scan | Not run, needs the public repo |
 | Behavior test on real prompts (`claude plugin eval`, claude.ai upload) | Not run |
 

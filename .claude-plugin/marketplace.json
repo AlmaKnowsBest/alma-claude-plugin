@@ -1,0 +1,15 @@
+{
+  "name": "alma",
+  "description": "Alma's plugins for Claude: your Alma food log, inside Claude.",
+  "owner": {
+    "name": "Alma",
+    "url": "https://alma.food"
+  },
+  "plugins": [
+    {
+      "name": "alma",
+      "source": "./",
+      "description": "Connects Claude to your Alma food log. Review your week, plan meals from your pantry, build a grocery list, check protein on a GLP-1, and log meals after you confirm them. Needs an Alma membership."
+    }
+  ]
+}

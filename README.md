@@ -2,6 +2,16 @@
 
 Alma is an iPhone app for tracking food and nutrition. This plugin connects Claude to your Alma account and adds six skills that work from your food log. They review your week, suggest meals from your pantry, build a grocery list, check protein on a GLP-1 medication, explain your Alma Score, and log meals after you confirm them.
 
+## Install
+
+In Claude Code:
+
+```
+/plugin install alma --marketplace AlmaKnowsBest/alma-claude-plugin
+```
+
+Then run `/mcp` and sign in to Alma when Claude asks. Connecting needs an Alma account with an active membership. Get Alma for iPhone at [alma.food](https://alma.food).
+
 ## What you need
 
 - An Alma account with an active membership. Connecting without one stops at sign-in with a message to start a membership in the Alma app.
