@@ -1,0 +1,14 @@
+{
+  "name": "alma",
+  "displayName": "Alma",
+  "version": "1.0.0",
+  "description": "Connects Claude to your Alma food log. Review your week, plan meals from your pantry, build a grocery list, check protein on a GLP-1, and log meals after you confirm them. Needs an Alma membership.",
+  "author": {
+    "name": "Alma",
+    "url": "https://alma.food"
+  },
+  "homepage": "https://alma.food",
+  "privacyPolicyUrl": "https://alma.food/privacy",
+  "license": "MIT",
+  "keywords": ["nutrition", "food", "meal-planning", "health"]
+}
