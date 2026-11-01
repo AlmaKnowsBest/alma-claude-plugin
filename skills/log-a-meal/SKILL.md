@@ -17,7 +17,7 @@ Confirm first, then log. Never call a write tool for food the user only mentione
 
 ## Which tool
 
-- One meal: `log_food_items` with a new UUID for `client_operation_id`, `user_confirmed: true`, and `items`. Omit `consumed_at` to log now. Otherwise send an ISO time with the UTC offset for the user's timezone, for example `2026-11-01T08:30:00-04:00`. Times can be up to 365 days back or 30 days ahead.
+- One meal: `log_food_items` with a new UUID for `client_operation_id`, `user_confirmed: true`, and `items`. Alma names the meal (Breakfast, Lunch, Dinner, Snack) from its time, so when the user names a meal or a time, ask for the time if needed and always send `consumed_at`. Omit it only when they ate just now. Send an ISO time with the UTC offset for the user's timezone, for example `2026-11-01T08:30:00-04:00`. Times can be up to 365 days back or 30 days ahead.
 - A whole day or week: `log_food_batch` with every meal and its time confirmed.
 - A saved standard day: `get_food_day_templates`, read the template by `template_id`, confirm the dates and contents, then `log_food_day_template` with its `expected_version`.
 - Fix an entry: find its `item_id` in `get_meal_data`, confirm the full replacement (portion and all nutrition), then `update_food_entry`. Any nutrient left out becomes unknown.
